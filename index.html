@@ -4,11 +4,29 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Mozifilmek</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>   
+    <meta name='viewport' content='width=device-width, initial-scale=1'> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>    
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
-
+    <div class="bemenet container">
+        <div class="row">
+            <p class="col-9">Írja be a film nevét</p>
+            <div class="col-3"><input type="text" id="film_nev"></div>
+        </div>
+        <div class="row">
+            <p class="col-9">Írja be a film rendezőjét</p>
+            <div class="col-3"><input type="text" id="film_rendezo"></div>
+        </div>
+        <div class="row">
+            <p class="col-9">Írja be a film kiadási évét</p>
+            <div class="col-3"><input type="number" id="film_ev"></div>
+        </div>
+        <div>
+            <button type="button" value="Hozzáad" id="btnhozzaad" onclick="hozzaad()"></button>
+        </div>
+    </div>
 </body>
 </html>

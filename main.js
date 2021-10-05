@@ -6,3 +6,7 @@ class Film {
       this.kiadási_ev=kiadási_ev;
     }
   }
+function hozzaad(){
+    const hozzaad=new Film(document.getElementById('film_nev'),document.getElementById('film_rendezo'),document.getElementById('film_ev').value)
+    filmek.push(hozzaad);
+}
