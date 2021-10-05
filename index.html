@@ -8,25 +8,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>    
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+
 </head>
-<body>
-    <div class="bemenet container">
-        <div class="row">
-            <p class="col-9">Írja be a film nevét</p>
-            <div class="col-3"><input type="text" id="film_nev"></div>
-        </div>
-        <div class="row">
-            <p class="col-9">Írja be a film rendezőjét</p>
-            <div class="col-3"><input type="text" id="film_rendezo"></div>
-        </div>
-        <div class="row">
-            <p class="col-9">Írja be a film kiadási évét</p>
-            <div class="col-3"><input type="number" id="film_ev"></div>
-        </div>
-        <div>
-            <button type="button" value="Hozzáad" id="btnhozzaad" onclick="hozzaad()"></button>
-        </div>
+<body >
+    <form id="myForm" onsubmit="return hozzaad()">
+    <div class="d-flex justify-content-center">
+    <div class="p-3 mb-2 bg-primary text-white">
+        <p>A film neve:</p> 
+        <input type="text" id="film_nev"></br>
+
+
+        <p>A film rendezője</p>
+        <input type="text" id="film_rendezo"></br>
+
+
+        <p>A film kiadási éve</p>
+        <input type="text" id="film_ev"></br>
+
+    
+        <input type="submit" value="Hozzáad">
     </div>
+    </div>
+    </form>
+    <div class="d-flex justify-content-center">
+    <div class="p-3 mb-2 bg-info text-dark">
+    <button class="btn btn-primary" onclick="CreateTablazat()"> Listáz</button>
+</div>
+</div>
+    <script src='main.js'></script>
 </body>
 </html>
